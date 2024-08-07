@@ -1,4 +1,4 @@
-# 🚩 Challenge #0: 🎟 Simple NFT Example
+# 🚩 Challenge #0: 🎟 Simple NFT Example using LSP8 on LUKSO
 
 ![readme-0](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/375b7797-6839-43cd-abe5-fca94d88e300)
 
@@ -6,17 +6,19 @@
 
 🧑‍🏫 If you would like a more gentle introduction for developers, watch our 15 video [🎥 Web2 to Web3](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69) series.
 
+📄 If you get get stuck make sure to consult the [LUKSO DOCS](https://docs.lukso.tech/)
+
 ---
 
-🎫 Create a simple NFT:
+🎫 Create a simple NFT using LSP8 on LUKSO:
 
-👷‍♀️ You'll compile and deploy your first smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀
+👷‍♀️ You'll compile and deploy your first LSP8 smart contract learning the differences between an LSP8 (new NFT standard) and an ERC721 (old standard). Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to the public LUKSO testnet network to share with friends! 🚀
 
-🌟 The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to a testnet, then build and upload your app to a public web server. Submit the url on [SpeedRunEthereum.com](https://speedrunethereum.com)!
+🌟 The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to LUKSO testnet, then build and upload your app to a public web server. Submit the url on [TODO]()!
 
-💬 Meet other builders working on this challenge and get help in the [Challenge 0 Telegram](https://t.me/+Y2vqXZZ_pEFhMGMx)!
+💬 Meet other builders working on this challenge and get help in the [SpeedRunLUKSO Commonground]()!
 
-🤖 If you have any question during your Challenge, you can try out the [Challenge AI assistant](https://scaffold-eth-assistant.streamlit.app/), and get answers to your Challenge/Scaffold-ETH questions. Please reach us in Telegram if something feels wrong!
+🤖 If you have any question during your Challenge, you can try out the [Cookbook.dev ChefGPT](https://www.cookbook.dev/contracts/BurntPunx-BurntPunX), and get answers to your Challenge/Scaffold-ETH questions. Please reach us in Commonground if something feels wrong!
 
 ## Checkpoint 0: 📦 Environment 📚
 
@@ -80,6 +82,8 @@ yarn start
 
 > 👨🏻‍🚒 When you close the incognito window, the account is gone forever. Burner wallets are great for local development but you'll move to more permanent wallets when you interact with public networks.
 
+> 🆙 In fact while burner wallets and 'externally owned accounts' (EOA's) will still work on LUKSO - one of the powerful new primitives that you will learn about are called [Universal Profiles](https://docs.lukso.tech/install-up-browser-extension/). Universal Profiles or 'UP's' are powerful smart contract accounts that support advanced interfaces and features for account abstraction. We will get more familiar with UP's and their benefits and new features later on.
+
 ---
 
 ## Checkpoint 2: 🖨 Minting
@@ -116,7 +120,7 @@ yarn start
 
 🛰 Ready to deploy to a public testnet?!?
 
-> Change the defaultNetwork in `packages/hardhat/hardhat.config.ts` to `sepolia`.
+> Change the defaultNetwork in `packages/hardhat/hardhat.config.ts` to `luksoTestnet`.
 
 ![chall-0-hardhat-config](https://github.com/scaffold-eth/se-2-challenges/assets/55535804/f94b47d8-aa51-46eb-9c9e-7536559a5d45)
 
@@ -130,21 +134,33 @@ yarn start
 
 ![chall-0-yarn-account](https://github.com/scaffold-eth/se-2-challenges/assets/2486142/c34df8c9-9793-4a76-849b-170fae7fd0f0)
 
-⛽️ You will need to send ETH to your deployer address with your wallet, or get it from a public faucet of your chosen network.
+⛽️ You will need to send LYXt to your deployer address with your wallet, or get it from a public faucet for the LUKSO testnet network.
 
-> Some popular Sepolia faucets are the [Alchemy Faucet](https://sepoliafaucet.com/), [Infura Faucet](https://www.infura.io/faucet/sepolia), and [Google Cloud Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia).
+> The LUKSO testnet faucet can be found [here](https://faucet.testnet.lukso.network/). Simply click the button at the bottom of the page to 'tweet' the request for funds and make sure to copy in your deployer address. You will need a twitter/X account to use the faucet.
 
 > ⚔️ Side Quest: Keep a 🧑‍🎤 [punkwallet.io](https://punkwallet.io) on your phone's home screen and keep it loaded with testnet eth. 🧙‍♂️ You'll look like a wizard when you can fund your deployer address from your phone in seconds.
 
 🚀 Deploy your NFT smart contract with `yarn deploy`.
 
-> 💬 Hint: You can set the `defaultNetwork` in `hardhat.config.ts` to `sepolia` **OR** you can `yarn deploy --network sepolia`.
+> 💬 Hint: You can set the `defaultNetwork` in `hardhat.config.ts` to `luksoTestnet` **OR** you can `yarn deploy --network sepolia`.
+
+🎉 Congrats! You've just deployed very first contract to LUKSO testnet! There's only one problem... You just deployed an ERC721 contract which is the old NFT standard. LUKSO is a new EVM-layer 1 chain powered by new solidity standards - instead of ERC's they're called LSP's (LUKSO standards Proposals). Continue on in the next section to learn about the new NFT standard LSP8.
 
 ---
 
-## Checkpoint 4: 🚢 Ship your frontend! 🚁
+## Checkpoint 4: 💡 Learn the differences between ERC721 and LSP8! ⚡
 
-> ✏️ Edit your frontend config in `packages/nextjs/scaffold.config.ts` to change the `targetNetwork` to `chains.sepolia` :
+#TODO: 
+- summarize differences of erc721 and lsp8 
+- show how to modify 'YourCollectible.sol' to be an LSP8
+- redeploy the final 'YourLSP8Collectible.sol'
+- show how to setMetadata.ts for the newly deployed lsp8
+
+---
+
+## Checkpoint 5: 🚢 Ship your frontend! 🚁
+
+> ✏️ Edit your frontend config in `packages/nextjs/scaffold.config.ts` to change the `targetNetwork` to `chains.luksoTestnet` :
 
 ![chall-0-scaffold-config](https://github.com/scaffold-eth/se-2-challenges/assets/12072395/ff03bda0-66c6-4907-a9ad-bc8587da8036)
 
@@ -156,7 +172,7 @@ yarn start
 
 ![image](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/f582d311-9b57-4503-8143-bac60346ea33)
 
-> 💬 Hint: For faster loading of your transfer page, consider updating the `fromBlock` passed to `useScaffoldEventHistory` in [`packages/nextjs/app/transfers/page.tsx`](https://github.com/scaffold-eth/se-2-challenges/blob/challenge-0-simple-nft/packages/nextjs/app/transfers/page.tsx#L12) to `blocknumber - 10` at which your contract was deployed. Example: `fromBlock: 3750241n` (where `n` represents its a [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)). To find this blocknumber, search your contract's address on Etherscan and find the `Contract Creation` transaction line.
+> 💬 Hint: For faster loading of your transfer page, consider updating the `fromBlock` passed to `useScaffoldEventHistory` in [`packages/nextjs/app/transfers/page.tsx`](https://github.com/scaffold-eth/se-2-challenges/blob/challenge-0-simple-nft/packages/nextjs/app/transfers/page.tsx#L12) to `blocknumber - 10` at which your contract was deployed. Example: `fromBlock: 3750241n` (where `n` represents its a [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)). To find this blocknumber, search your contract's address on the [LUKSO testnet blockexplorer](https://explorer.execution.testnet.lukso.network/) and find the `Contract Creation` transaction line.
 
 🚀 Deploy your NextJS App
 
@@ -177,7 +193,7 @@ yarn test
 #### Configuration of Third-Party Services for Production-Grade Apps.
 
 By default, 🏗 Scaffold-ETH 2 provides predefined API keys for popular services such as Alchemy and Etherscan. This allows you to begin developing and testing your applications more easily, avoiding the need to register for these services.  
-This is great to complete your **SpeedRunEthereum**.
+This is great to complete your **SpeedRunLUKSO**.
 
 For production-grade applications, it's recommended to obtain your own API keys (to prevent rate limiting issues). You can configure these at:
 
@@ -185,19 +201,21 @@ For production-grade applications, it's recommended to obtain your own API keys 
 
 - 📃`ETHERSCAN_API_KEY` variable in `packages/hardhat/.env` with your generated API key. You can get your key [here](https://etherscan.io/myapikey).
 
+- 📃`LUKSO-explorer_API_KEY` variable in `packages/hardhat/.env` with your generated API key. You can get your key [here](https://lukso-explorer.eu.auth0.com/u/login?state=hKFo2SB3ZmZsR0hJa2lBbGlLZV9ua3JYU3otamxzMmJIcnBLYqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHJiSDlDckVsMlRKQmRiYmE4VkRpU2hqQXdITXMxTDBto2NpZNkgc2lYcUxMMjBWeHdrbnhabnIyMm5KcndIMFZjSVdWWlQ).
+
 > 💬 Hint: It's recommended to store env's for nextjs in Vercel/system env config for live apps and use .env.local for local testing.
 
 ---
 
 ## Checkpoint 5: 📜 Contract Verification
 
-You can verify your smart contract on Etherscan by running (`yarn verify --network network_name`) :
+You can verify your smart contract on LUKSO blockexplorer by running (`yarn verify --network network_name`) :
 
 ```shell
-yarn verify --network sepolia
+yarn verify --network luksoTestnet
 ```
 
-> It is okay if it says your contract is already verified. Copy the address of YourCollectable.sol and search it on sepolia Etherscan to find the correct URL you need to submit this challenge.
+> It is okay if it says your contract is already verified. Copy the address of YourLSP8Collectable.sol and search it on the LUKSO blockexplorer to find the correct URL you need to submit this challenge.
 
 ## Checkpoint 6: 💪 Flex!
 
@@ -207,11 +225,11 @@ yarn verify --network sepolia
 
 ## ⚔️ Side Quests
 
-### 🐟 Open Sea
+### 🔥 Universal Page
 
-> 🐃 Want to see your new NFTs on Opensea? Head to [Testnets Opensea](https://testnets.opensea.io/)
+> 🐃 Want to see your new NFTs on a testnet marketplace? Head to [Universal Page testnet]()
 
-> 🎫 Make sure you have minted some NFTs on your Vercel page, then connect to Opensea using that same wallet.
+> 🎫 Make sure you have minted some NFTs on your Vercel page (in a testnet UP), then connect to Universal Page using that same wallet.
 
 ![image](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/c752b365-b801-4a02-ba2e-62e0270b3795)
 
@@ -221,6 +239,6 @@ yarn verify --network sepolia
 
 ---
 
-> 🏃 Head to your next challenge [here](https://github.com/scaffold-eth/se-2-challenges).
+> 🏃 Head to your next challenge [here](https://github.com/Dev-Rel-as-a-Service/SpeedRunLUKSO).
 
-> 💬 Problems, questions, comments on the stack? Post them to the [🏗 scaffold-eth developers chat](https://t.me/joinchat/F7nCRK3kI93PoCOk)
+> 💬 Problems, questions, comments on the stack? Post them to the [SpeedRunLUKSO developers chat]()
