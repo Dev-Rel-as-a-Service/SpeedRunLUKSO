@@ -1,14 +1,16 @@
-# 🏗 Scaffold-ETH 2 Challenges
+# 🏗 SpeedRunLUKSO Challenges
 
-**Learn how to use 🏗 Scaffold-ETH 2 to create decentralized applications on Ethereum. 🚀**
+**Learn how to use 🏗 Scaffold-ETH 2 to create decentralized applications on LUKSO. 🚀**
+
+**Learn the new NFT and Token standards (LSP8 + LSP7) and discover the superpowers of Universal Profiles. 🆙**
 
 ---
 
-## 🚩 Challenge 0: 🎟 Simple NFT Example
+## 🚩 Challenge 0: 🎟 Simple NFT Example using LSP8 on LUKSO
 
-🎫 Create a simple NFT to learn the basics of 🏗 scaffold-eth. You'll use 👷‍♀️ HardHat to compile and deploy smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀
+🎫 Create a simple NFT using LSP8 on LUKSO. You'll use 👷‍♀️ HardHat to compile and deploy your first LSP8 smart contract learning the differences between an LSP8 (new NFT standard) and an ERC721 (old standard). Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to the public LUKSO testnet network to share with friends! 🚀
 
-https://github.com/scaffold-eth/se-2-challenges/tree/challenge-0-simple-nft
+https://github.com/Dev-Rel-as-a-Service/SpeedRunLUKSO/tree/challenge-0-simple-nft
 
 ---
 
