@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     <div className="flex items-center flex-col flex-grow pt-10">
       <div className="px-5 w-[90%] md:w-[75%]">
         <h1 className="text-center mb-6">
-          <span className="block text-2xl mb-2">SpeedRunEthereum</span>
+          <span className="block text-2xl mb-2">SpeedRunLUKSO</span>
           <span className="block text-4xl font-bold">Challenge #1: 🔏 Decentralized Staking App</span>
         </h1>
         <div className="flex flex-col items-center justify-center">
@@ -19,17 +19,20 @@ const Home: NextPage = () => {
           />
           <div className="max-w-3xl">
             <p className="text-center text-lg mt-8">
-              🦸 A superpower of Ethereum is allowing you, the builder, to create a simple set of rules that an
-              adversarial group of players can use to work together. In this challenge, you create a decentralized
-              application where users can coordinate a group funding effort. If the users cooperate, the money is
-              collected in a second smart contract. If they defect, the worst that can happen is everyone gets their
-              money back. The users only have to trust the code.
+            🦸 A superpower of Ethereum (and <a href="https://lukso.network/" target="_blank" rel="noreferrer" className="underline">
+                LUKSO
+              </a>{" "} - because LUKSO is a fork of ethereum and is EVM compatible) is that it allows you, the builder, to create a simple set of rules that an adversarial group of players can use to work together. In this challenge, you create a decentralized application where users can coordinate a group funding effort. If the users cooperate, the money is collected in a second smart contract. If they defect, the worst that can happen is everyone gets their money back. The users only have to trust the code.
+            </p>
+            <p className="text-center text-lg mt-8">
+              This app becomes even more impressive when users use <a href="https://universalprofile.cloud/" target="_blank" rel="noreferrer" className="underline">
+                Universal Profles
+              </a> - because stakers can see identifiable metadata tied to the addresses list of current stakers.
             </p>
             <p className="text-center text-lg">
-              🌟 The final deliverable is deploying a Dapp that lets users send ether to a contract and stake if the
+              🌟 The final deliverable is deploying a Dapp that lets users send LYX to a contract and stake if the
               conditions are met, then deploy your app to a public webserver. Submit the url on{" "}
-              <a href="https://speedrunethereum.com/" target="_blank" rel="noreferrer" className="underline">
-                SpeedRunEthereum.com
+              <a href="" target="_blank" rel="noreferrer" className="underline">
+                HERE
               </a>{" "}
               !
             </p>
